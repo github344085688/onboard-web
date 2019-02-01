@@ -1,0 +1,40 @@
+@import "../../../assets/css/mixins";
+
+.progress-lists {
+  z-index: 1;
+  .label-box {
+    height: 45px;
+    padding-left: 25px;
+    @include flex-row-nowrap-center;
+    .accomplish {
+      width: 11px;
+      height: 16px;
+      color:  #56A7FD;
+      margin-right: 6px;
+      font-size: 10px;
+    }
+    label {
+      height: 25px;
+      width: auto;
+      line-height: 22px;
+
+    }
+    .listNumber {
+      margin-right: 15px;
+      margin-left: 15px;
+      color: #9fa0a1;
+    }
+    .line-drawing {
+      flex: 1;
+      height: 0;
+      border-bottom: solid 2px #D8D8D8;
+    }
+
+  }
+  .list-detail{
+    padding-left: 45px;
+    align-content:stretch;
+    align-items:stretch;
+    @include flex-row-wrap;
+  }
+}

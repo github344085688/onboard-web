@@ -1,0 +1,40 @@
+@import "../../../assets/css/mixins";
+.exports-button{
+  background: linear-gradient(180deg, #4C5263 11.55%, #2E323C 83.16%);
+  border-radius: 4px;
+  height: 30px;
+  line-height: 30px;
+  border: none;
+  padding: 0;
+  margin: 0;
+  width:100%;
+  @include flex-row-nowrap-center;
+  color: #FFFFFF;
+  cursor: pointer;
+  position: relative;
+  outline:none;
+  .line-between {
+    width: 1px;
+    height: 20px;
+    border-left: 1px solid #FFFFFF;
+  }
+  .exports-drop-down{
+    position: absolute;
+    top:100%;
+    min-height: 30px;
+    width: 100%;
+    background: #fff;
+    border: #ddd solid 1px;
+    z-index: 10;
+    .exports-option{
+      height: 35px;
+      width: 100%;
+      text-align: left;
+      padding-left: 20px;
+      color: #2E323C;
+      &:hover{
+        background: #ddd;
+      }
+    }
+  }
+}

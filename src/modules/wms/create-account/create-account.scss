@@ -1,0 +1,35 @@
+@import "../../../assets/css/mixins";
+  .create-account{
+    width: 94%;
+    .icon-box{
+      text-align: center;
+      width: auto;
+      margin: auto;
+      padding-top: 50px;
+    }
+    .account-content{
+      width: 87%;
+      margin: auto;
+    }
+    .drop-or-browse{
+      height: 35px;
+      background: #E5E5E5;
+      border: 1px dashed #979797;
+      box-sizing: border-box;
+      border-radius: 2px;
+      @include flex-row-nowrap-center;
+    }
+    .add-box{
+      height: 51px;
+      @include flex-row-nowrap-center;
+    }
+
+  }
+//
+//label {float:left;}
+//input[required]+label:before {
+//  content: '*';
+//  color: red;
+//  margin-right: 5px;
+//
+//}

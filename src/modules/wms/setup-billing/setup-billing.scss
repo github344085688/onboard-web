@@ -1,0 +1,39 @@
+@import "../../../assets/css/mixins";
+  .setup-billing{
+    width: 100%;
+    .icon-box{
+      text-align: center;
+      width: auto;
+      margin: auto;
+      padding-top: 50px;
+    }
+    .account-content{
+      width: 87%;
+      margin: auto;
+    }
+    .drop-or-browse{
+      height: 35px;
+      background: #E5E5E5;
+      border: 1px dashed #979797;
+      box-sizing: border-box;
+      border-radius: 2px;
+      @include flex-row-nowrap-center;
+    }
+    .upload{
+      height: 25px;
+      background: #D4E1EE;
+      border-radius: 2px;
+      line-height: 8px;
+      color: #56A7FD;
+      text-align: center;
+      cursor: pointer;
+      outline: none;
+      border: none;
+    }
+    .add-box{
+      height: 51px;
+      @include flex-row-nowrap-center;
+    }
+
+  }
+

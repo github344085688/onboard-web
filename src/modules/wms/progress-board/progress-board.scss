@@ -1,0 +1,40 @@
+@import "../../../assets/css/mixins";
+
+.progress-Board {
+  padding-top: 80px;
+    .progress-detail{
+      background: #FFFFFF;
+      width: 23%;
+      min-height: 74px;
+      box-shadow: 0px 4.33881px 4.33881px rgba(212, 225, 238, 0.25);
+      border-radius: 3.25411px;
+      margin-right: 1.5%;
+      margin-top: 10px;
+      margin-bottom: 20px;
+      align-self: stretch;
+      padding-top: 5px;
+      padding-bottom: 20px;
+      padding-right: 15px;
+      padding-left: 15px;
+      padding-top: 10px;
+      box-sizing: border-box;
+    }
+    .particular-year{
+      width: 100%;
+      padding: 30px;
+      @include flex-row-nowrap-center;
+      .year{
+        height: 25px;
+        line-height: 25px;
+        font-size: 18px;
+        font-weight: 700;
+        color: #9FA0A1;
+        padding: 0 15px;
+      }
+      .line-drawing {
+        height: 2px;
+        background: #D8D8D8;
+        width:100px;
+      }
+    }
+}

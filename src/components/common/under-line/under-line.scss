@@ -1,0 +1,47 @@
+.under-line {
+  width: 100%;
+  height: 2px; /*no*/
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+  .field-line {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    .text-field-line {
+      position: absolute;
+      right: 0;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      height: 0;
+      border-bottom: 2px solid #E5E5E5;
+      //background: #E5E5E5;
+    }
+    .text-field-focus-line {
+      position: absolute;
+      right: 0;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      height: 0;
+      border-bottom: 2px solid #56A7FD;
+      //background-color: #56A7FD;
+      -webkit-transform: scaleX(0);
+      transform: scaleX(0);
+      -webkit-transition: -webkit-transform 0.45s cubic-bezier(0.23, 1, 0.32, 1);
+      transition: -webkit-transform 0.45s cubic-bezier(0.23, 1, 0.32, 1);
+      transition: transform 0.45s cubic-bezier(0.23, 1, 0.32, 1);
+      transition: transform 0.45s cubic-bezier(0.23, 1, 0.32, 1), -webkit-transform 0.45s cubic-bezier(0.23, 1, 0.32, 1);
+    }
+    .error-line{
+      -webkit-transform: scaleX(1);
+      border-bottom: 2px solid red!important;
+      transform: scaleX(1);
+    }
+    .text-field-focus {
+      -webkit-transform: scaleX(1);
+      transform: scaleX(1);
+    }
+  }
+}

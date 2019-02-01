@@ -1,0 +1,76 @@
+.select-box{
+  position: relative;
+}
+select {
+  width: 100%;
+  height: 100%;
+  //background: rgba(0,0,0,.3);
+  cursor:pointer;
+  outline: none;
+  border-bottom: 2px solid #ddd;
+
+}
+select:focus{
+   //border-bottom: 2px solid red;
+
+}
+select:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 10px solid transparent;
+  border-top-color: #ccc;
+  top: 14px;
+  right: 10px;
+  cursor: pointer;
+  z-index: -2;
+}
+
+select + .mdn-bar{
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  height: 0;
+  border-bottom: 2px solid red;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: -webkit-transform 0.45s cubic-bezier(0.23, 1, 0.32, 1);
+  transition: -webkit-transform 0.45s cubic-bezier(0.23, 1, 0.32, 1);
+  transition: transform 0.45s cubic-bezier(0.23, 1, 0.32, 1);
+  transition: transform 0.45s cubic-bezier(0.23, 1, 0.32, 1), -webkit-transform 0.45s cubic-bezier(0.23, 1, 0.32, 1);
+}
+select:focus +.mdn-bar{
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+
+.field-group {
+  display: block;
+  position: relative;
+  margin-bottom: 20px;
+  background: #ddd;
+}
+
+.mdn-select:after {
+  content: ' ';
+  position: absolute;
+  pointer-events: none;
+  border: solid transparent;
+  border-top-color: #B5B5B5;
+  border-width: 4px;
+  z-index: 100;
+  bottom: 10px;
+  right: 5px;
+  height: 0;
+  width: 0
+}
+
+.prepend-icon {
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  width: 100%
+}

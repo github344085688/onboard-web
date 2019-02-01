@@ -1,0 +1,82 @@
+@import "../../../assets/css/mixins";
+
+.tags-input {
+  width: 100%;
+  .text-field-content {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    line-height: 0;
+    .tags-content {
+      width: 100%;
+      height: 100%;
+      @include flex-row-wrap;
+      align-items: normal!important;
+      .tag-item {
+          display: inline-block;
+          padding: 14px 10px 10px 10px;
+          background: #D4E1EE;
+          margin-right: 5px;
+          margin-bottom: 5px;
+          box-shadow: 0px 1.84107px 3.68213px rgba(46, 50, 60, 0.15);
+          border-radius: 1.84107px;
+          i {
+            cursor: pointer;
+            margin-left: 5px;
+          }
+        }
+      input[type=text] {
+        background: none;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        padding-left: 5px;
+        padding-right: 5px;
+        outline: none;
+        height: 30px;
+        min-width: 20%;
+        border: none;
+        flex: 1;
+        z-index: 2;
+      }
+
+    }
+  }
+  .text-field-content input[type=text]::-webkit-input-placeholder {
+    color: #9FA0A1;
+  }
+
+  .text-field-content input[type=text]:-moz-placeholder {
+    color: #9FA0A1;
+  }
+
+  .text-field-content input[type=text]::-moz-placeholder {
+    color: #9FA0A1;
+  }
+
+  .text-field-content input[type=text]:-ms-input-placeholder {
+    color: #9FA0A1;
+  }
+  .text-field-content .text-field-underline {
+    width: 100%;
+    height: 2px; /*no*/
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+  }
+  .text-field-content .validateBox {
+    font-size: 16px; /*no*/
+    position: absolute;
+    top: 30px;
+    left: 15px;
+    -webkit-transition: top 0.5s;
+    transition: top 0.5s;
+    z-index: 0;
+  }
+  .text-field-content .valErrors {
+    color: #00008b;
+    -webkit-transition: top 0.5s;
+    transition: top 0.5s;
+    top: -16px;
+  }
+
+}

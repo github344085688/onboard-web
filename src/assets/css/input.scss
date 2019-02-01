@@ -1,0 +1,14 @@
+.upload{
+  height: 25px;
+  background: #D4E1EE;
+  border-radius: 2px;
+  line-height: 8px;
+  color: #56A7FD;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  &:hover{
+    color: #56A7FD;
+  }
+}
